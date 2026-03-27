@@ -1,0 +1,20 @@
+# Hadoop build artifacts
+*.class
+*.jar
+target/
+
+# Data files (too large for git)
+data/raw/*.csv
+data/processed/*.csv
+
+# Python artifacts
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+
+# HDFS local output dumps
+output/hdfs_results/
+
+# OS files
+.DS_Store
