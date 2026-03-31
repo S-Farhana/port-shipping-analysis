@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dd3c6a25e1cee0a1770f47dc95e8d350 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <h3 align="center" style="font-size:16px; color:#E6EDF3"><b>Global Port Cargo Analysis</b></h3>
+    
+            <div class="folium-map" id="map_dd3c6a25e1cee0a1770f47dc95e8d350" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dd3c6a25e1cee0a1770f47dc95e8d350 = L.map(
+                "map_dd3c6a25e1cee0a1770f47dc95e8d350",
+                {
+                    center: [20.0, 10.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a0266ff5530a526547e6155a979df03c = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a0266ff5530a526547e6155a979df03c.addTo(map_dd3c6a25e1cee0a1770f47dc95e8d350);
+        
+    
+            var circle_marker_7e183be6304949a8bb0ef49e8e182738 = L.circleMarker(
+                [51.2194, 4.4025],
+                {"bubblingMouseEvents": true, "color": "#F0883E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F0883E", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.804415135335, "stroke": true, "weight": 3}
+            ).addTo(map_dd3c6a25e1cee0a1770f47dc95e8d350);
+        
+    
+            circle_marker_7e183be6304949a8bb0ef49e8e182738.bindTooltip(
+                `<div>
+                     Port: Antwerp<br>Volume: 209,329,725<br>Avg Delay: 66.4h
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_690667ccfc1ad4797a5e018ee34e22d4 = L.circleMarker(
+                [35.1796, 129.0756],
+                {"bubblingMouseEvents": true, "color": "#F0883E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F0883E", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.002743264572324, "stroke": true, "weight": 3}
+            ).addTo(map_dd3c6a25e1cee0a1770f47dc95e8d350);
+        
+    
+            circle_marker_690667ccfc1ad4797a5e018ee34e22d4.bindTooltip(
+                `<div>
+                     Port: Busan<br>Volume: 187,827,313<br>Avg Delay: 61.5h
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6cf354b0a614e62450d81aa90b1bf54c = L.circleMarker(
+                [25.2048, 55.2708],
+                {"bubblingMouseEvents": true, "color": "#F0883E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F0883E", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_dd3c6a25e1cee0a1770f47dc95e8d350);
+        
+    
+            circle_marker_6cf354b0a614e62450d81aa90b1bf54c.bindTooltip(
+                `<div>
+                     Port: Dubai<br>Volume: 8,355,260<br>Avg Delay: 70.2h
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_952df3144132b686d94b7c12ed171b73 = L.circleMarker(
+                [53.5511, 9.9937],
+                {"bubblingMouseEvents": true, "color": "#F0883E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F0883E", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.041324479520579, "stroke": true, "weight": 3}
+            ).addTo(map_dd3c6a25e1cee0a1770f47dc95e8d350);
+        
+    
+            circle_marker_952df3144132b686d94b7c12ed171b73.bindTooltip(
+                `<div>
+                     Port: Hamburg<br>Volume: 135,218,213<br>Avg Delay: 0.0h
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d236a28dad2fecccbdb863cbb3884e74 = L.circleMarker(
+                [29.8683, 121.544],
+                {"bubblingMouseEvents": true, "color": "#58A6FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#58A6FF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.63827672101042, "stroke": true, "weight": 3}
+            ).addTo(map_dd3c6a25e1cee0a1770f47dc95e8d350);
+        
+    
+            circle_marker_d236a28dad2fecccbdb863cbb3884e74.bindTooltip(
+                `<div>
+                     Port: Ningbo<br>Volume: 607,202,996<br>Avg Delay: 34.5h
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5765fc0e1f23edbbd33e6e552b946f14 = L.circleMarker(
+                [3.0, 101.4],
+                {"bubblingMouseEvents": true, "color": "#F0883E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F0883E", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.000772639903776, "stroke": true, "weight": 3}
+            ).addTo(map_dd3c6a25e1cee0a1770f47dc95e8d350);
+        
+    
+            circle_marker_5765fc0e1f23edbbd33e6e552b946f14.bindTooltip(
+                `<div>
+                     Port: Port Klang<br>Volume: 160,952,495<br>Avg Delay: 66.2h
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d438aa887076fe71e74ed9934a06c935 = L.circleMarker(
+                [51.9225, 4.4792],
+                {"bubblingMouseEvents": true, "color": "#58A6FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#58A6FF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.0, "stroke": true, "weight": 3}
+            ).addTo(map_dd3c6a25e1cee0a1770f47dc95e8d350);
+        
+    
+            circle_marker_d438aa887076fe71e74ed9934a06c935.bindTooltip(
+                `<div>
+                     Port: Rotterdam<br>Volume: 804,658,857<br>Avg Delay: 94.3h
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11054c79e8fa85d8080341be113c22fb = L.circleMarker(
+                [31.2304, 121.4737],
+                {"bubblingMouseEvents": true, "color": "#F0883E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F0883E", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.156720778943319, "stroke": true, "weight": 3}
+            ).addTo(map_dd3c6a25e1cee0a1770f47dc95e8d350);
+        
+    
+            circle_marker_11054c79e8fa85d8080341be113c22fb.bindTooltip(
+                `<div>
+                     Port: Shanghai<br>Volume: 245,601,216<br>Avg Delay: 79.3h
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c7f1b9e88fa78899356c5583378baab = L.circleMarker(
+                [1.2901, 103.8519],
+                {"bubblingMouseEvents": true, "color": "#58A6FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#58A6FF", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.713348923485945, "stroke": true, "weight": 3}
+            ).addTo(map_dd3c6a25e1cee0a1770f47dc95e8d350);
+        
+    
+            circle_marker_4c7f1b9e88fa78899356c5583378baab.bindTooltip(
+                `<div>
+                     Port: Singapore<br>Volume: 796,970,313<br>Avg Delay: 68.3h
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
