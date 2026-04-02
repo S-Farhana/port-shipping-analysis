@@ -10,9 +10,9 @@ Use Combiner, Partitioner, and Job Chaining
 Generate insightful visualizations using Python
 
 ## Dataset
-Source: Kaggle – Daily Port Activity Data
-Size: ~3.4 million rows, 30 columns
-Additional Data: Synthetic vessel dataset (5,000 records)
+- Source: Kaggle – Daily Port Activity Data
+- Size: ~3.4 million rows, 30 columns
+- Additional Data: Synthetic vessel dataset (5,000 records)
 
 ## Key Fields
 - portname – Port name
